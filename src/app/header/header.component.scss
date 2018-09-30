@@ -1,8 +1,10 @@
+$whiteTransparent: #ffffffe6;
+
+nav {
+    background-color: $whiteTransparent;
+    padding: 1.5rem 0rem;
+}
 .navbar-brand {
     text-transform: uppercase;
     font-size: 1.75rem;
-}
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 0rem;
 }
