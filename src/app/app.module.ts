@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectsService } from './services/projects.service';
 
 
 @NgModule({
@@ -33,12 +34,13 @@ import { FooterComponent } from './footer/footer.component';
     NgbModule,
     FormsModule,
     RouterModule.forRoot([
+      {path: '', redirectTo: '/portfolio', pathMatch: 'full'},
       {path:'portfolio',component: PortfolioComponent},
       {path:'about',component: AboutComponent},
       {path:'contact', component: ContactComponent}
     ])
   ],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
   
 

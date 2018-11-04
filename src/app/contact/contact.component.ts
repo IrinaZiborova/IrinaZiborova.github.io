@@ -11,5 +11,35 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  name : string;
+  email : string;
+  message : string;
+  contactPhotoUrl = "assets/img/contacts.jpg";
+  followMe = "FOLLOW ME -";
+  myLocation = "Berlin, Germany";
+  contactMe = "CONTACT ME -";
+  socials = [
+    {
+      socialIcoLink : "https://www.behance.net/irinaziborova",
+      socialIcoUrl : "assets/img/be.png"
+    },
+    {
+      socialIcoLink : "https://www.instagram.com/iraziborova",
+      socialIcoUrl : "assets/img/insta.png"
+    },
+    {
+      socialIcoLink : "https://www.linkedin.com/in/ziborovairina/",
+      socialIcoUrl : "assets/img/in.png"
+    }
+  ];
 
+  /**
+   * Process the form we have. Send to whatever backend
+   * Only alerting for now
+   */
+  processForm() {
+    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
+    alert(allInfo); 
+  }
 }

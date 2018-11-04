@@ -1,4 +1,5 @@
 $whiteTransparent: #ffffffe6;
+$lightgrey: #eee; 
 
 nav {
     background-color: $whiteTransparent;
@@ -7,4 +8,7 @@ nav {
 .navbar-brand {
     text-transform: uppercase;
     font-size: 1.75rem;
+}
+.active-link {
+    border-bottom: 1px solid $lightgrey;
 }

@@ -1,3 +1,62 @@
-<p>
-  contact works!
-</p>
+<div class="row contacts scene_element scene_element-fadeinup">
+  <div class="col-12 col-md-4 offset-md-2">
+    <img [src]="contactPhotoUrl"/>
+  </div>
+  <div class="col-12 col-md-4 flex-column">
+    <!-- form goes here -->
+    <h4>{{contactMe}}</h4>
+
+    <form (ngSubmit)="processForm()">
+
+      <!-- name -->
+      <div class="field">
+        <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required
+        minlength="3" #nameInput="ngModel">
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+          Name needs to be at least 3 characters long.
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="field">
+        <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required
+        email #emailInput="ngModel">
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+          Needs to be a valid email.
+        </div>
+      </div>
+
+      <!-- message -->
+      <div class="field">
+        <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
+        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+          Your message is required.
+        </div>
+      </div>
+
+      <div class="field">
+        <button type="submit" class="button is-danger is-large">Submit</button>
+      </div>
+    </form>
+
+    <div class="flex-social-wrap">
+      <div class="flex">
+        <svg version="1.1" id="locationIco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+        <line style="fill:none;stroke:#556080;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="29" y1="28" x2="29" y2="57"/>
+        <circle style="fill:#000;" cx="29" cy="14" r="14"/>
+        <circle style="fill:#fff;" cx="24" cy="10" r="3"/>
+        </svg>
+        <span>{{myLocation}}</span>
+      </div>
+      <div class="flex">
+          <span *ngFor="let social of socials">
+              <a href="{{social.socialIcoLink}}" target="_blank">
+                <img class="socialIco" [src]="social.socialIcoUrl"/>
+              </a>
+          </span>
+      </div>
+    </div>
+
+  </div>
+</div>

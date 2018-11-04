@@ -1,3 +1,8 @@
-<p>
-  portfolio works!
-</p>
+<div class="masonry scene_element scene_element-fadeinup">
+  <div *ngFor="let project of projectsService.projects" class="item">
+    <a routerLink="/">
+        <img [src]="project.photoUrl" [alt]="project.alt">
+        <a class="-pt-mono">{{project.title}}</a>
+    </a>
+  </div>
+</div>
