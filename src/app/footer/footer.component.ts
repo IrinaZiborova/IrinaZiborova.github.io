@@ -14,5 +14,19 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
   contact = 'How to contact';
+  links = [
+    {
+      url : 'https://www.behance.net/irinaziborova',
+      title: 'Behance ‣'
+    },
+    {
+      url : 'https://www.instagram.com/irinaziborova.de/',
+      title: 'Instagram ‣'
+    },
+    {
+      url : 'https://www.linkedin.com/in/ziborovairina/',
+      title: 'LinkedIn ‣'
+    }
+  ]
   currentYear = new Date();
 }

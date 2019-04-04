@@ -1,7 +1,8 @@
 export interface Project {
-    
-    photoUrl : string,
-    linkUrl: string,
+    id: number,
+    photoUrl : string[],
     title: string,
-    alt: string
+    alt: string,
+    description: string,
+    projectTags : string[],
 }

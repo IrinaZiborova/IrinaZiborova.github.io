@@ -6,14 +6,8 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link -pt-mono" routerLink="/portfolio" routerLinkActive="active-link">{{portfolio}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link -pt-mono" routerLink="/about" routerLinkActive="active-link">{{about}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link -pt-mono" routerLink="/contact" routerLinkActive="active-link">{{contact}}</a>
+        <li class="nav-item" *ngFor="let navigation of navigations">
+          <a class="nav-link -pt-mono" routerLink="{{navigation.routerLink}}" routerLinkActive="active-link">{{navigation.title}}</a>
         </li>
       </ul>
     </div>

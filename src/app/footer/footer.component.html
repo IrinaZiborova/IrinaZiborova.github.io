@@ -4,9 +4,11 @@
   </div>
   <div class="col-12 col-md-8">
     <ul class="list-inline">
-        <li class="-pt-mono list-inline-item"><a  href="https://www.behance.net/irinaziborova" target="_blank">Behance ‣</a></li>
-        <li class="-pt-mono list-inline-item"><a  href="https://www.instagram.com/irinaziborova.de/" target="_blank">Instagram ‣</a></li>
-        <li class="-pt-mono list-inline-item"><a  href="https://www.linkedin.com/in/ziborovairina/" target="_blank">LinkedIn ‣</a></li>
+        <li class="-pt-mono list-inline-item" *ngFor="let link of links">
+          <a [attr.href]="link.url" target="_blank">{{link.title}}</a>
+        </li>
+        <!-- <li class="-pt-mono list-inline-item"><a  href="https://www.instagram.com/irinaziborova.de/" target="_blank">Instagram ‣</a></li>
+        <li class="-pt-mono list-inline-item"><a  href="https://www.linkedin.com/in/ziborovairina/" target="_blank">LinkedIn ‣</a></li> -->
     </ul>
     <a class="-pt-mono" href="mailto:irisha.ziborova@gmail.com">Email me</a>
     <div class="-pt-mono rights"><span class="copy-symbol">&copy;</span>{{currentYear | date:'yyyy'}} Irina Ziborova</div>

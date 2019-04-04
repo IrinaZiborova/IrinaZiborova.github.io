@@ -14,9 +14,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   title = 'Irina Ziborova';
-  portfolio = "Portfolio";
-  about = "About";
-  contact = "Contact";
+  navigations = [
+    {
+      routerLink : "/portfolio",
+      title : "Portfolio"
+    },
+    {
+      routerLink : "/about",
+      title : "About"
+    },
+    {
+      routerLink : "/contact",
+      title : "Contact"
+    }
+  ]
 }
 
 
