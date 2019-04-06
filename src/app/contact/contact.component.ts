@@ -15,10 +15,11 @@ export class ContactComponent implements OnInit {
   name : string;
   email : string;
   message : string;
-  contactPhotoUrl = "assets/img/contacts.jpg";
+  contactPhotoUrl = "assets/img/contact.jpg";
   followMe = "FOLLOW ME -";
   myLocation = "Berlin, Germany";
   contactMe = "CONTACT ME -";
+  buttonNname = "Email me";
   socials = [
     {
       socialIcoLink : "https://www.behance.net/irinaziborova",

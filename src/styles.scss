@@ -44,6 +44,7 @@ h4 {
 a:hover, .active-link {
     opacity: 0.5;
     text-decoration: none !important;
+    cursor: pointer;
 }
 
 ul li, .list-inline-item {
@@ -82,7 +83,7 @@ nav, .footer {
     animation-duration: 0.9s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
-    padding: 40px 0;
+    padding-bottom: 40px ;
   }
 
  /** An element that fades in and slides up */

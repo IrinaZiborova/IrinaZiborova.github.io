@@ -1,44 +1,10 @@
 <div class="row contacts scene_element scene_element-fadeinup">
-  <div class="col-12 col-md-4 offset-md-2">
-    <img [src]="contactPhotoUrl"/>
-  </div>
-  <div class="col-12 col-md-4 flex-column">
-    <!-- form goes here -->
-    <h4>{{contactMe}}</h4>
-
-    <form (ngSubmit)="processForm()">
-
-      <!-- name -->
-      <div class="field">
-        <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required
-        minlength="3" #nameInput="ngModel">
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
-          Name needs to be at least 3 characters long.
-        </div>
-      </div>
-
-      <!-- email -->
-      <div class="field">
-        <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required
-        email #emailInput="ngModel">
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
-          Needs to be a valid email.
-        </div>
-      </div>
-
-      <!-- message -->
-      <div class="field">
-        <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
-          Your message is required.
-        </div>
-      </div>
-
-      <div class="field">
-        <button type="submit" class="button is-danger is-large">Submit</button>
-      </div>
-    </form>
-
+    <div class="col-12 offset-md-3 col-md-6">
+       <img [src]="contactPhotoUrl" alt="contact"/>
+    </div>
+    <div class="field">
+        <a href="mailto:irisha.ziborova@gmail.com"><button type="submit" class="button black is-danger is-large">{{buttonNname}}</button></a>
+    </div>
     <div class="flex-social-wrap">
       <div class="flex">
         <svg version="1.1" id="locationIco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -57,6 +23,4 @@
           </span>
       </div>
     </div>
-
-  </div>
 </div>

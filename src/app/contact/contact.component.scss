@@ -10,26 +10,29 @@ $lightgrey: #eee;
     width: 100%;
     text-align: center;
 
-    input, textarea {
-        width: 100%;
-        margin-bottom: 24px;
-        border: 1px solid $lightgrey;
-    }
-
-    textarea {
-        min-height: 100px;
-    }
-
-    button {
+    button.black {
         background-color: $black;
         border: none;
         color: white;
-        padding: 4px 24px;
+        padding: 4px 50px;
+        margin: 20px;
 
         &:hover {
             opacity: 0.5;
         }
     }
+
+    // input, textarea {
+    //     width: 100%;
+    //     margin-bottom: 24px;
+    //     border: 1px solid $lightgrey;
+    // }
+
+    // textarea {
+    //     min-height: 100px;
+    // }
+
+    
 }
 .flex-social-wrap {
     display: flex;
