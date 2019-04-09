@@ -11,7 +11,6 @@ export class ProjectsService {
     projects: Project[] = [];
     
     constructor() {
-        
         this.projects.push({
             id: 1,
             photoUrl : ["assets/img/1.png","assets/img/4.jpg", "assets/img/3.jpg","assets/img/2.jpg"],
@@ -69,9 +68,9 @@ export class ProjectsService {
 
         this.projects.push({
             id: 5,
-            photoUrl : ["assets/img/phonetemplate.jpg"],
-            title: "Gif animation",
-            alt: "Gif animation",
+            photoUrl : ["assets/img/phonetemplate.gif"],
+            title: "Interaction design",
+            alt: "Interaction design",
             description: "here should be the text for the page",
             projectTags : []
         });
@@ -81,8 +80,12 @@ export class ProjectsService {
             photoUrl : ["assets/img/filters.jpg"],
             title: "Mobile Filters",
             alt: "Mobile Filters",
-            description: "here should be the text for the page",
-            projectTags : []
+            description: "Navigation and filtering among many fashion articles include seasonality, occasion, style filters. Filter panel is designed universally for desktop and smartphone. Front-end implementation also was provided. Filters are always a very interactive section, therefore I liked to work on usability and interaction design at this project. Collapsed/ expanded filters, buttons to increase a list of options to a filter,  active filter status in collapsed and expanded modes and removing active filters globally or from a specific filter. Those behaviors were the biggest things to think about and I like the final result.",
+            projectTags : ["Filter’s panel",
+                "Interaction design",
+                "HTML, CSS, JavaScript",
+                "Collapsed filters"
+                ]
         });
 
 
@@ -103,17 +106,25 @@ export class ProjectsService {
             photoUrl : ["assets/img/Marcopolo.jpg"],
             title: "Marco Polo Hotel site",
             alt: "Marco Polo Hotel site",
-            description: "here should be the text for the page",
-            projectTags : []
+            description: "Marco Polo hotel is a small accomodation in the hart of St. Petersburg, Russia. Every suite is unique and made in Classical Russian design. To reflect this interior in my web-design were used red-wine and gold colours and a corporate monogram.",
+            projectTags : ["Hotel web-site",
+                "Responsive design",
+                "Classic style",
+                "Booking system",
+                "Dynamic pages"]
         });
 
         this.projects.push({
             id: 9,
-            photoUrl : ["assets/img/Andeor.jpg"],
+            photoUrl : ["assets/img/Andeor.jpg", "assets/img/andeor2.jpg", "assets/img/andeor3.jpg" ],
             title: "Dance School Site",
             alt: "Dance School Site",
-            description: "here should be the text for the page",
-            projectTags : []
+            description: "Responsive design and layout for a dancing school. Made in dark colours with the use of black and white photos to stand out the chamber theater atmosphere. You will find the main information on the site about dancing classes, groups and projects, reviews, photos, and a contact form.",
+            projectTags : ["Dancing school web-design",
+                "Responsive design and layout",
+                "Dark interface",
+                "One page site",
+                "Landing page"]
         });
     }
 }
