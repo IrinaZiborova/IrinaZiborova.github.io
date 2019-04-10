@@ -15,10 +15,9 @@ export class AboutComponent implements OnInit {
   myPhotoUrl = "assets/img/me.jpg";
   myStory = "My Story -";
   paragrafs = [
-     'Hi, my name is Irina, at 22 years old I understood that I want to become a UI and UX designer. I changed my university, quit my job of a project coordinator and moved to Berlin. ',
-     'Of course everything was not so fast and easy as this sentence. And I even have a blog about how I moved to Germany.',
-     'What never changes is my love to travelling, photos and ballroom dancing. You can find much more about my life from my instagram.',
-     'Here I would like to share with you my works, experience and invite you to an exciting journey around the UX and UI world.'
+     'I am an Interaction Engineer and Usability specialist with a passion to bring clear logic, good user experience, and a pleasant UI to web-based platforms.',
+     'I started in 2014 to learn about web technologies namely HTML, CSS, and Javascript. Followed by a Master program in Computer Graphics and Web Design, I deepened my knowledge in Helsinki’s Aalto University with the following courses: human-computer interaction, user-oriented design and usability product design.",     ',
+     'I am hands on with most popular prototyping and design tools like Adobe CC, Sketch, Figma, Invision, Anima, Craft and I am an active user of design thinking methods and I am used to work in an agile environment.'
   ];
   educations = [
     {

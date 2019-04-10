@@ -3,7 +3,7 @@
       <img [src]="myPhotoUrl" alt="Irina Ziborova Portret">
     </div>
     <div class="col-12 col-md-6 col-lg-7">
-        <h4>{{myStory}}</h4>
+        <h4 class="mobile-margin-top">{{myStory}}</h4>
         <p *ngFor="let paragraf of paragrafs">
             {{paragraf}}
         </p>
@@ -19,7 +19,7 @@
         </p>
     </div>
     <div  class="col-12 col-md-5">
-        <h4>EDUCATION-</h4>
+        <h4 class="mobile-margin-top">EDUCATION -</h4>
         <p *ngFor="let education of educations">
           <span>{{education.year}} </span>
           <span>{{education.name}}</span>
