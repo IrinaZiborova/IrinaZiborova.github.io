@@ -68,11 +68,14 @@ export class ProjectsService {
 
         this.projects.push({
             id: 5,
-            photoUrl : ["assets/img/phonetemplate.gif"],
+            photoUrl : ["assets/img/phonetemplate.gif", "assets/img/shoppingquest1.jpg", "assets/img/shoppingquest2.jpg"],
             title: "Interaction design",
             alt: "Interaction design",
-            description: "here should be the text for the page",
-            projectTags : []
+            description: "Interaction design played a big role in human-computer interaction. It helps to show the system statuses and reactions which are one of the essentials in usability. The project is a gift finder, that is 4 questions namely gender, occasion, budget, and interests. Design solution preceded a user test and competitor analysis. The name for a project was found with the use of a design thinking methods.",
+            projectTags : ["Gift finder design",
+                "Interaction design",
+                "Design thinking methods",
+                "User testing and prototyping"]
         });
 
         this.projects.push({
